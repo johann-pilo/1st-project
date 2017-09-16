@@ -1,0 +1,114 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Image Modification tools">
+    <meta name="author" content="JONY">
+
+
+    <title>Filter Image</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'tools/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'tools/css/style.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="{%url 'upload'%}">Upload</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rotate <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{% url 'rotate' 0 %}">Clock Wise &nbsp; &nbsp; <span class="glyphicon glyphicon glyphicon-repeat"></span></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="{% url 'rotate' 1 %}">Anti Clock wise</a></li>
+              </ul>
+            </li>
+
+
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+      <div class="row content">
+        <!-- left nav -->
+        <div class="col-sm-2 leftnav">
+          <a href="{% url 'upload' %}" class="btn btn-primary btn-lg active btn1" role="button" aria-pressed="true">Upload</a>
+
+          <div class="dropdown">
+            <a class="btn btn-primary btn-lg active btn1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rotate</a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'rotate' 0 %}">Clock Wise &nbsp; &nbsp; <span class="glyphicon glyphicon glyphicon-repeat"></span></a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="{% url 'rotate' 1 %}">Anti Clock wise</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <a class="btn btn-primary btn-lg active btn1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resize</a>
+            <form action="#" method="get" enctype="multipart/form-data" class ="dropdown-menu">{% csrf_token %}
+
+              <div class="[ form-group ]">
+                <input type="checkbox" name="fancy-checkbox-success" id="fancy-checkbox-success" autocomplete="off" />
+                <div class="[ btn-group ]">
+                    <div>
+                    <label for="fancy-checkbox-success" class="[ btn btn-success ]">
+                        <span class="[ glyphicon glyphicon-ok ]"></span>
+                        <span> </span>
+                    </label>
+                    <label for="fancy-checkbox-success" class="[ btn btn-default active ]">
+                        Keep Aspect Ratio
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <a href="#" class="btn btn-primary btn-lg active btn1" role="button" aria-pressed="true">Crop</a>
+          <a href="#" class="btn btn-primary btn-lg active btn1" role="button" aria-pressed="true">Resize</a>
+          <li class="dropdown">
+            <a class="btn btn-primary btn-lg active btn1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Format</a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'format' 'jpg' %}"> .jpg </a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="{% url 'format' 'png' %}">.png</a></li>
+            </ul>
+          </li>
+        </div>
+
+        <!-- main body -->
+        <div class="col-sm-8">
+          <div class= "centernav">
+            {% if not request.session.img %}
+              <form action="{% url 'processUpload' %}" method="post" enctype="multipart/form-data">{% csrf_token %}
+                  <span class="btn btn-default btn-file">
+                    Drop Image Here
+                      <input id="id_image" type="file" class="btn btn-success image_button" name="image">
+                  </span>
+                </br>
+                  <input type="submit" value="Upload" class="btn btn-info" />
+              </form>
+            {% else %}

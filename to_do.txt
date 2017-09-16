@@ -1,0 +1,111 @@
+https://www.ofoct.com/merge-jpg-files
+
+varvy.com
+google analytics
+google webmaster
+http://imresizer.com.hypestat.com/
+
+Cron job command: php -q /home/zzspsrlc/public_html/remove_session.php
+
+
+Do you often perform basic image processing like rotate, crop, resize and convert on a image? Try <a href="imresizer.com"> imresizer.com </a> and you don't have to leave browser for these kind of work.
+
+- You can resize photo in mm, cm and inch along with pixel. 
+- you also can convert any picture to jpg, jpeg, png, gif, pdf, bmp, tiff formats. 
+- It's crop and rotate tool is very user friendly.
+- as it's a web app so you can use it in any platform like windows, mac, linux, android, or iphone
+
+
+Amazon india-> Your unique Associate ID is jony0d-21s
+
+
+Idea:
+
+
+
+
+DB:
+session_id - hash(random) - number_of_service - timestamp
+
+before publish:
+- backlink
+
+
+
+
+
+after publish:
+* undo and redo
+* download -> kb | format | download
+- upload from url
+- after 10k images-> count-> image, service
+
+
+done:
+- rotate - icon
+- display only png version(lossless)
+- add error page
+- resize - add cm, mm, inch
+- fixed footer
+- toolbar style
+- progressbar in file upload
+- cacheing
+- info(extension, size, height, width)
+- session folder -  session + (timer delete folder)
+- crop-> ratio maintain
+- correct crop ratio
+- icon
+- youtube video
+- delete files - corn job
+* crop - fixed box
+* remove .php -> index.php filtering
+* 404 page
+* youtube video -> https://youtu.be/c-cDtv2FKiM
+* loading page optimize -> youtube video
+- max upload file size
+- js combine + minify
+- css minify
+- robot.txt
+- sitemap.xml
+- social buttons-> fb, twitter.
+- SEO
+- htaccess
+OFF PAGE SEO-->
+- robots.txt
+- sitemap xml
+- google search structured data
+
+
+current work:
+youtube video->
+- add text
+- combine video
+- add subtitle
+
+3112
+
+itsMe7023
+
+01557217456
+
+1. php version -> image magic class
+2. php max upload size
+3. free ssl
+4. where server located?
+
+domain -> greenweb
+host -> https://www.mylighthost.com/manager/clientarea.php?action=productdetails&id=2000
+	-> http://138.201.160.37/~zzspsrlc/
+
+They have one month free trial. I would suggest everyone to give a free trial before decide anything. By the way, they have immidiate response time and free shared ssl.
+
+cloudflare cdn-
+amit.ns.cloudflare.com
+robin.ns.cloudflare.com
+
+a address- 107.161.23.204
+
+If you want to resize image in mm, cm, inch or pixel online give http://imresizer.com/resize a try.
+
+
+

@@ -1,0 +1,31 @@
+#rewrite rules start
+Options -Indexes
+Options -MultiViews
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)\.[\d]{10}\.(css|js|jpg|png)$ $1.$2 [L] # css/js version control
+# RewriteRule ^(([a-z0-9\-]+/)*[a-z0-9\-]+)$ index.php?_req=$1 [NC,L,QSA]
+RewriteRule ^$ home.php
+RewriteRule ^home$ home.php
+RewriteRule ^upload$ upload.php
+RewriteRule ^rotate$ rotate.php
+RewriteRule ^crop$ crop.php
+RewriteRule ^resize$ resize.php
+RewriteRule ^convert$ convert.php
+RewriteRule ^download$ download.php
+RewriteRule ^sizeChange$ sizeChange.php
+RewriteRule ^combineImage$ combineImage.php
+RewriteRule ^error$ error.php
+RewriteRule ^blog$ blog.php
+
+RewriteCond %{HTTP_HOST} ^www\.imresizer\.com$
+RewriteRule ^/?$ "http\:\/\/imresizer\.com\/" [R=301,L]
+#rewrite rules end
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php56” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddType application/x-httpd-ea-php56 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

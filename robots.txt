@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*.php
+Disallow: /home
+Disallow: /upload
+Disallow: /error
+Disallow: /download

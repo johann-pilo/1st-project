@@ -1,0 +1,4 @@
+In January 1995 Unisys, the company Compuserve contracted to create the GIF format, announced that they would be enforcing the patent on the LZW compression technique the GIF format uses. This means that commercial developers that include the GIF encoding or decoding algorithms have to pay a license fee to Compuserve. This does not concern users of GIFs or non-commercial developers.
+
+However, a number of people banded together and created a completely patent-free graphics format called PNG (pronounced "ping"), the Portable Network Graphics format. PNG is superior to GIF in that it has better compression and supports millions of colours. PNG files end in a .png suffix.
+

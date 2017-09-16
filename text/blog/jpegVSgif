@@ -1,0 +1,12 @@
+When should I use JPEG, and when should I stick with GIF?
+JPEG is not going to displace GIF entirely. For some types of images, GIF is superior in image quality, file size, or both. One of the first things to learn about JPEG is which kinds of images to apply it to.
+
+Generally speaking, JPEG is superior to GIF for storing full-color or grey-scale images of "realistic" scenes; that means scanned photographs and similar material. Any continuous variation in color, such as occurs in highlighted or shaded areas, will be represented more faithfully and in less space by JPEG than by GIF.
+
+GIF does significantly better on images with only a few distinct colors, such as line drawings and simple cartoons. Not only is GIF lossless for such images, but it often compresses them more than JPEG can. For example, large areas of pixels that are all exactly the same color are compressed very efficiently indeed by GIF. JPEG can't squeeze such data as much as GIF does without introducing visible defects. (One implication of this is that large single-color borders are quite cheap in GIF files, while they are best avoided in JPEG files.)
+
+Computer-drawn images (ray-traced scenes, for instance) usually fall between photographs and cartoons in terms of complexity. The more complex and subtly rendered the image, the more likely that JPEG will do well on it. The same goes for semi-realistic artwork (fantasy drawings and such).
+
+JPEG has a hard time with very sharp edges: a row of pure-black pixels adjacent to a row of pure-white pixels, for example. Sharp edges tend to come out blurred unless you use a very high quality setting. Edges this sharp are rare in scanned photographs, but are fairly common in GIF files: borders, overlaid text, etc. The blurriness is particularly objectionable with text that's only a few pixels high. If you have a GIF with a lot of small-size overlaid text, don't JPEG it.
+
+Plain black-and-white (two level) images should never be converted to JPEG; they violate all of the conditions given above. You need at least about 16 grey levels before JPEG is useful for grey-scale images. It should also be noted that GIF is lossless for grey-scale images of up to 256 levels, while JPEG is not. 

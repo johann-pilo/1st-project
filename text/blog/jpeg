@@ -1,0 +1,16 @@
+JPEG is a standardised image compression mechanism. JPEG is designed for compressing either full-colour (24 bit) or grey-scale digital images of "natural" (real-world) scenes.
+
+It works well on photographs, naturalistic artwork, and similar material; not so well on lettering, simple cartoons, or black-and-white line drawings (files come out very large). JPEG handles only still images, but there is a related standard called MPEG for motion pictures.
+
+JPEG is "lossy", meaning that the image you get out of decompression isn't quite identical to what you originally put in. The algorithm achieves much of its compression by exploiting known limitation of the human eye, notably the fact that small colour details aren't perceived as well as small details of light-and-dark. Thus, JPEG is intended for compressing images that will be looked at by humans.
+
+A lot of people are scared off by the term "lossy compression". But when it comes to representing real-world scenes, no digital image format can retain all the information that impinges on your eyeball. By comparison with the real-world scene, JPEG loses far less information than GIF.
+
+Quality v Compression
+A useful property of JPEG is that the degree of lossiness can be varied by adjusting compression parameters. This means that the image maker can trade off file size against output image quality.
+
+For good-quality, full-color source images, the default quality setting (Q 75) is very often the best choice. Try Q 75 first; if you see defects, then go up.
+
+Except for experimental purposes, never go above about Q 95; using Q 100 will produce a file two or three times as large as Q 95, but of hardly any better quality. If you see a file made with Q 100, it's a pretty sure sign that the maker didn't know what he/she was doing.
+
+If you want a very small file (say for preview or indexing purposes) and are prepared to tolerate large defects, a Q setting in the range of 5 to 10 is about right. Q 2 or so may be amusing as "op art". 

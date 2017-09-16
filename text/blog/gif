@@ -1,0 +1,7 @@
+The Graphics Interchange Format was developed in 1987 at the request of Compuserve, who needed a platform independent image format that was suitable for transfer across slow connections. It is a compressed (lossless) format (it uses the LZW compression) and compresses at a ratio of between 3:1 and 5:1
+
+It is an 8 bit format which means the maximum number of colours supported by the format is 256.
+
+There are two GIF standards, 87a and 89a (developed in 1987 and 1989 respectively). The 89a standard has additional features such as improved interlacing, the ability to define one colour to be transparent and the ability to store multiple images in one file to create a basic form of animation.
+
+Both Mosaic and Netscape will display 87a and 89a GIFs, but while both support transparency and interlacing, only Netscape supports animated GIFs. 
